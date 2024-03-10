@@ -1,0 +1,44 @@
+#create database Hotel;
+#create table Rooms(room_num int,room_cost double,room_statues varchar(30));
+#create table Customer(name varchar(30),phone int,room_num int);
+#alter table Customer drop column phone;
+#alter table Customer add column (phone varchar(11));
+#insert into Customer values ('Abdelrahman',104,'01000000002');
+#select  customer.name ,customer.phone,rooms.room_num from customer ,rooms where  customer.room_num=rooms.room_num
+#SELECT rooms.room_num
+#FROM rooms
+#WHERE rooms.room_statues != 'occupied'
+#AND rooms.room_num NOT LIKE '%2%' ;
+#ALTER TABLE Rooms add room_kind varchar(15)
+#SELECT rooms.room_num FROM rooms 
+#WHERE rooms.room_statues != 'occupied'AND rooms.room_kind NOT LIKE 'single';
+#UPDATE rooms
+#SET room_statues= 'occupied'
+#WHERE room_num =101;
+#insert into customer values ('hamed',5  ,'010');
+#SELECT*from customer;
+#create DATABASE Hotel2;
+#create table Rooms(room_num VARCHAR(3),room_cost double,room_statues varchar(30),room_type VARCHAR(30));
+#insert into rooms values ('210',2000  ,'available','double');
+#UPDATE rooms
+#WHERE room_num =103;
+#SELECT*from rooms;
+#create table Customer(name varchar(30),phone varchar(30),room_num varchar(30) REFERENCES  rooms.room_num );
+#insert into customer values ('Hassan','01000000104'  ,'204');
+#ALTER TABLE customer add dayrent int;
+#UPDATE rooms
+#SET room_statues='available'
+#WHERE room_num ='210';
+#ALTER TABLE customer add dayrent int;
+
+#DELETE from customer where phone = '0123665597';
+#SET room_statues ='available'
+#105
+#102
+#108#110
+
+
+#WHERE room_num ='110';
+
+SELECT*from customer;
+#select  customer.name ,customer.phone,rooms.room_num from customer ,rooms where  customer.room_num=rooms.room_num;
